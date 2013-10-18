@@ -40,13 +40,14 @@ Then we associate the Event.Action with the dom event click
 1. Drag the widget to your Wakanda page. 
 2. Edit the Action event in the Studio Events Panel
 
+```
 	// in your WAF.onAfterInit :
 	
-clickMe1.Action = function clickMe1_Action (event)
+	clickMe1.Action = function clickMe1_Action (event)
 	{
 		alert('I was clicked');
 	};
-
+```
 
 
 ### CSS
