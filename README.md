@@ -41,6 +41,7 @@ Then we associate the Event.Action with the dom event click
 2. Edit the Action event in the Studio Events Panel
 3. Do something in the event code 
 
+
 	// in your WAF.onAfterInit :
 	clickMe1.Action = function clickMe1_Action (event)
 	{
