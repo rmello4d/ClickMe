@@ -38,8 +38,8 @@ Then we associate the Event.Action with the dom event click
 ### Wakanda Studio
 
 1. Drag the widget to your Wakanda page. 
-2. Select the widget and edit the Events in the Studio panel
-3. Insert some code in the Event Action
+2. Edit the Action event in the Studio Events Panel
+3. Do something in the event code 
 
 	clickMe1.Action = function clickMe1_Action (event)
 	{
