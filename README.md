@@ -20,6 +20,7 @@ We are adding a dom property to the basic widget :
  	ClickMe.addDomHtmlProperty('value', { default_value: 'Click me, please!'});
 
 Then we associate the Event.Action with the dom event click 
+
  	//associating the dom event click to the wakanda Event.Action class (you can associate many dom events to the same wakanda event
  	ClickMe.autoFireDomEvent('click', Event.Action);
 
