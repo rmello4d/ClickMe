@@ -1,22 +1,22 @@
-(function() {
-    var ClickMe = Widget.ClickMe.inherit(WAF.require('waf-behavior/studio'));
+(function(ClickMe) {
 	
 	// adding attributes
     ClickMe.addAttributes([{
         name: 'data-value',
         domAttribute: false
-    },{
-    	'name':'data-width',
-    	'description':'Width',
-    	'defaultValue': '100px'
-    },{
-    	'name':'data-height',
-    	'description':'Height',
-    	'defaultValue': '20px'
     }]);   
     
-    
-	// defining the action when user resize the widget in the Studio      
+   		
+	/*Default positioning*/
+    ClickMe.setWidth('200');
+    ClickMe.setHeight('20');
+
+	// adding the event  to the Studio Events panel
+    ClickMe.addEvent({ name: 'Action' });
+
+});
+
+// For more information, refer to http://doc.wakanda.org/Wakanda0.DevBranch/help/Title/en/page3870.htmler resize the widget in the Studio      
     ClickMe.on('Resize', function(event) {
     	this.studioCss('height', event.size.height);
     	this.studioCss('width', event.size.width); 
