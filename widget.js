@@ -14,7 +14,7 @@ WAF.define('ClickMe', function() {
  	// Use the autoFireEvent to associate the dom event 'click' to the wakanda Action event string (you can also associate many dom events to the same wakanda event if needed)
  	// In this case, I am not sending any particular data to the event. 
  	 	
- 	ClickMe.autoFireDomEvent('click', "Action");
+ 	ClickMe.autoFireDomEvent('click', "JustClicked");
  
  
  	ClickMe.prototype.init = function() {
@@ -39,7 +39,7 @@ WAF.define('ClickMe', function() {
               
         //creating an internal event that will change the color of the content to yellow       
  		$(this.node).on('click', function() {
-			this.fire(new Event.Action({
+			this.fire('JustClicked', {
                 value: 'I was clicked !'
             }));
 		}.bind(this));
