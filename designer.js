@@ -12,7 +12,7 @@
     ClickMe.setHeight('20');
 
 	// adding the event  to the Studio Events panel
-    ClickMe.addEvent({ name: 'Action' });
+    ClickMe.addEvent({ name: 'JustClicked' });
 
 });
 
